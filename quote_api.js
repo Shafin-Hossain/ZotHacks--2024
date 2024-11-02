@@ -3,9 +3,10 @@ async function fetchQuote() {
     const response = await fetch(url, {method: 'GET', 
     headers: {
         "Content-Type": "application/json",
-        'X-Api-Key': 'NP0PJzUD6ERMf5/PDw6OA==IcJ4mfgjulk8coWa'
+        'X-Api-Key': 'INP0PJzUD6ERMf5/PDw6OA==IcJ4mfgjulk8coWa'
     }
 })
+console.log(response)
 const data = await response.json()
 console.log(data)
 }

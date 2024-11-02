@@ -4,4 +4,14 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-color: blue;
+}
+
+h1 {
+    font-size: 50px;
+    font-family: 'Pacifico';
+}
+
+a {
+    color: 'red';
 }

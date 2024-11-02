@@ -4,6 +4,4 @@ function startNextPage() {
 
     let questionOne = document.getElementById('question-1');
     questionOne.style.display = 'flex';
-
-    console.log('Executed')
 }

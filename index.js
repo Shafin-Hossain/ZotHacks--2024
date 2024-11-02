@@ -4,10 +4,6 @@ function startNextPage() {
 
     let questionOne = document.getElementById('question-1');
     questionOne.style.display = 'flex';
-<<<<<<< HEAD
-}
-=======
-
     console.log('Executed')
 }
 function questionOneNextPage() {
@@ -37,4 +33,3 @@ function questionThreeNextPage() {
 
     console.log('Executed')
 }
->>>>>>> 01c853c9fbef2277533c86574d73229047758ef2

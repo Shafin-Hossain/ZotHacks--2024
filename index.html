@@ -7,19 +7,21 @@
     <script src = 'image_api.js'></script>
     <title>Document</title>
     <link rel ="stylesheet" href = "index.css"/>
+    <script src = 'index.js'></script>
+    <script src = 'quote_api.js'></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id='home'>
+    <div id='home' class = 'page'>
         <h1>WHAT PETR R U?</h1>
         <img src="petr.jpg" alt="A picture of the default Petr">
         <button onclick="startNextPage()">START</button>
         <a href="https://www.instagram.com/ucirvine/">@ucirvine</a>
     </div>
-    <div id = 'question-1'>
+    <div id = 'question-1' class = 'page'>
         <h2> On the weekends what do you prefer to do?</h2>
         <button id="question-1-button-1" onclick='questionOneButtonOneNextPage()'>Going out with friends</button>
         <button id="question-1-button-2" onclick='questionOneButtonTwoNextPage()'>Enjoying your own vibes</button>
@@ -28,7 +30,7 @@
         <a href="https://www.instagram.com/ucirvine/">@ucirvine</a>
     </div>
 
-    <div id="question-2">
+    <div id="question-2" class = 'page'>
         <h2>Do you like video games?</h2>
         <button id="question-2-button-1" onclick='questionTwoNextPage()'>Yes</button>
         <button id="question-2-button-2" onclick='questionTwoNextPage()'>No</button>
@@ -36,7 +38,7 @@
         <a href="https://www.instagram.com/ucirvine/">@ucirvine</a>    
     </div>
 
-    <div id="question-3">
+    <div id="question-3" class = 'page'>
         <h2>What word would your friends use to describe you?</h2>
         <button id="question-3-button-1" onclick='questionThreeNextPage()'>Nonchalant</button>
         <button id="question-3-button-2" onclick='questionThreeNextPage()'>Charming</button>
@@ -44,7 +46,7 @@
         <a href="https://www.instagram.com/ucirvine/">@ucirvine</a>
     </div>
 
-    <div id = 'end-screen'>
+    <div id = 'end-screen' class = 'page'>
         <h1>CONGRATULATIONS</h1>
         <h3>You got...</h3>
         <img scr=""> 

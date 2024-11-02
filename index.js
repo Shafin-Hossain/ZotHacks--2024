@@ -4,7 +4,6 @@ function startNextPage() {
 
     let questionOne = document.getElementById('question-1');
     questionOne.style.display = 'flex';
-    console.log('Executed')
 }
 function questionOneButtonOneNextPage() {
     let q1b1 = document.getElementById('question-1-button-1');
@@ -20,13 +19,11 @@ function questionOneButtonTwoNextPage() {
 }
 
 function questionOneNextPage() {
-    let home = document.getElementById('question-1');
-    home.style.display = 'none';
+    let questionOne = document.getElementById('question-1');
+    questionOne.style.display = 'none';
 
-    let questionOne = document.getElementById('question-2');
-    questionOne.style.display = 'flex';
-
-    console.log('Executed')
+    let questionTwo = document.getElementById('question-2');
+    questionTwo.style.display = 'flex';
 }
 function questionTwoButtonOneNextPage() {
     let q2b1 = document.getElementById('question-2-button-1');
@@ -42,13 +39,11 @@ function questionTwoButtonTwoNextPage() {
 }
 
 function questionTwoNextPage() {
-    let home = document.getElementById('question-2');
-    home.style.display = 'none';
+    let questionTwo = document.getElementById('question-2');
+    questionTwo.style.display = 'none';
 
-    let questionOne = document.getElementById('question-3');
-    questionOne.style.display = 'flex';
-
-    console.log('Executed')
+    let questionThree = document.getElementById('question-3');
+    questionThree.style.display = 'flex';
 }
 function questionThreeButtonOneNextPage() {
     let q3b1 = document.getElementById('question-3-button-1');
@@ -64,11 +59,9 @@ function questionThreeButtonTwoNextPage() {
 }
 
 function questionThreeNextPage() {
-    let home = document.getElementById('question-3');
-    home.style.display = 'none';
+    let questionThree = document.getElementById('question-3');
+    questionThree.style.display = 'none';
 
-    let questionOne = document.getElementById('end-screen');
-    questionOne.style.display = 'flex';
-
-    console.log('Executed')
+    let questionFour = document.getElementById('end-screen');
+    questionFour.style.display = 'flex';
 }

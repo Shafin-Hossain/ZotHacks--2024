@@ -4,7 +4,6 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: blue;
     animation-name: background-animation;
     animation-duration: 5s;
     background-image: url('duocommie.jpg');
@@ -13,7 +12,8 @@
 h1 {
     font-size: 50px;
     font-family: 'Bungee';
-    animation-name: font-animation;
+    color: blue;
+    animation-name: writing-animation;
     animation-duration: 5s;
 }
 
@@ -21,12 +21,20 @@ button {
     font-size: 20px;
     font-family: 'Roboto';
     padding: 50px 100px;
-    background-color: red;
+    color: blue;
+    background-color: yellow;
+    animation-name: writing-animation, button-animation;
+    animation-duration: 5s, 5s;
 }
 
-@keyframes font-animation {
-    from {background-color: blue;}
-    to {background-color: yellow;}
+@keyframes writing-animation {
+    from {color: blue;}
+    to {color: yellow;}
+  }
+
+@keyframes button-animation {
+    from {background-color: yellow}
+    to {background-color: blue}
   }
 
 @keyframes background-animation {

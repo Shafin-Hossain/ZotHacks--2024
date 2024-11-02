@@ -5,6 +5,8 @@
     align-items: center;
     height: 100vh;
     background-color: blue;
+    animation-name: background-animation;
+    animation-duration: 5s;
 }
 
 h1 {
@@ -15,3 +17,8 @@ h1 {
 a {
     color: 'red';
 }
+
+@keyframes background-animation {
+    from {background-color: blue;}
+    to {background-color: yellow;}
+  }

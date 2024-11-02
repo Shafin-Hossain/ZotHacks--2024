@@ -21,20 +21,19 @@ button {
     font-size: 20px;
     font-family: 'Roboto';
     padding: 50px 100px;
+    color: yellow;
+    background-color: blue;
+    animation-name: writing-animation;
+    animation-duration: 5s;
+}
+
+button:hover {
     color: blue;
-    background-color: yellow;
-    animation-name: writing-animation, button-animation;
-    animation-duration: 5s, 5s;
 }
 
 @keyframes writing-animation {
     from {color: blue;}
     to {color: yellow;}
-  }
-
-@keyframes button-animation {
-    from {background-color: yellow}
-    to {background-color: blue}
   }
 
 @keyframes background-animation {

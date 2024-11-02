@@ -1,5 +1,7 @@
-async function fetchImage() {
-    const url = "https://api.unsplash.com/photos/random?client_id=OguwtPs6Ef6EJHtacng6id3YXXZqMDrfGx96s_GJGOQ&query=japan"
+function spaceReplace(word) {return word.split(" ").join("%20")}
+
+async function fetchImage(category) {
+    const url = `https://api.unsplash.com/photos/random?client_id=OguwtPs6Ef6EJHtacng6id3YXXZqMDrfGx96s_GJGOQ&query=${spaceReplace(category)}`
     const response = await fetch(url,
         {
             method: 'GET', 

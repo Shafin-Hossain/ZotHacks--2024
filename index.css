@@ -7,11 +7,14 @@
     background-color: blue;
     animation-name: background-animation;
     animation-duration: 5s;
+    background-image: url('duocommie.jpg');
 }
 
 h1 {
     font-size: 50px;
     font-family: 'Bungee';
+    animation-name: font-animation;
+    animation-duration: 5s;
 }
 
 button {
@@ -21,11 +24,12 @@ button {
     background-color: red;
 }
 
-a {
-    color: 'red';
-}
-
-@keyframes background-animation {
+@keyframes font-animation {
     from {background-color: blue;}
     to {background-color: yellow;}
+  }
+
+@keyframes background-animation {
+    from {background-image: url('duocommie.jpg');}
+    to {background-image: url('petr.jpg');}
   }

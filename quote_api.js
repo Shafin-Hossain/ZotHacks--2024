@@ -1,5 +1,5 @@
-async function fetchQuote() {
-    const url = "https://api.api-ninjas.com/v1/quotes?category=happiness"
+async function fetchQuote(category) {
+    const url = `https://api.api-ninjas.com/v1/quotes?category=${category}`
     const response = await fetch(url, {method: 'GET', 
     headers: {
         "Content-Type": "application/json",
@@ -10,4 +10,4 @@ console.log(response)
 const data = await response.json()
 console.log(data)
 }
-fetchQuote()
+

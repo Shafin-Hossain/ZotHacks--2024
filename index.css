@@ -6,7 +6,7 @@
     display:flex;
     animation-name: background-animation;
     animation-duration: 1s;
-    background-image: url('duocommie.jpg');
+    background-image: url('petr2.jpg');
     animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
 }
@@ -51,6 +51,6 @@ button:hover {
   }
 
 @keyframes background-animation {
-    from {background-image: url('duocommie.jpg');}
+    from {background-image: url('petr2.jpg');}
     to {background-image: url('petr.jpg');}
   }

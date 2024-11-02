@@ -4,27 +4,33 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: blue;
     animation-name: background-animation;
     animation-duration: 5s;
 }
 
 h1 {
     font-size: 50px;
-    font-family: 'Pacifico';
+    font-family: 'Bungee';
+    color: blue;
+    animation-name: writing-animation;
+    animation-duration: 5s;
 }
 
 button {
     font-size: 20px;
     padding: 50px 100px;
-    background-color: red;
+    color: blue;
+    background-color: yellow;
+    animation-name: writing-animation, button-animation;
+    animation-duration: 5s, 5s;
 }
 
-a {
-    color: 'red';
-}
+@keyframes writing-animation {
+    from {color: blue;}
+    to {color: yellow;}
+  }
 
-@keyframes background-animation {
-    from {background-color: blue;}
-    to {background-color: yellow;}
+@keyframes button-animation {
+    from {background-color: yellow}
+    to {background-color: blue}
   }

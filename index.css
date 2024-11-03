@@ -40,7 +40,7 @@ h2 {
     z-index: 99;
     font-size: 40px;
     font-family: 'Bungee';
-    color: rgb(245, 255, 132);
+    color: rgb(241, 255, 92);
     text-align: center;
 }
 #hackpetr {
@@ -68,10 +68,11 @@ button:hover {
 
 @keyframes writing-animation {
     from {color: blue;}
-    to {color: yellow;}
+    to {color: rgb(254, 254, 95);}
   }
 
 @keyframes background-animation {
     from {background-image: url('petr2.jpg');}
     to {background-image: url('petr.jpg');}
   }
+  #end-screen {overflow-y:auto;}

@@ -19,7 +19,7 @@ export function getParamaters() {
         case '221':
             return ['laidback', 'home']
         case '222':
-            return ['charmster', 'success']
+            return ['charming', 'success']
     }
 }
 

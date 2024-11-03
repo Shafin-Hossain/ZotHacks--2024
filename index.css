@@ -33,6 +33,13 @@ h1 {
     animation-direction: alternate-reverse;
 }
 
+h2 {
+    z-index: 99;
+    font-size: 40px;
+    font-family: 'Bungee';
+    color: rgb(245, 255, 132);
+    text-align: center;
+}
 #hackpetr {height: 80vh;
 
 }

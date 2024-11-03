@@ -83,7 +83,7 @@ function questionThreeButtonTwoNextPage() {
     questionThreeNextPage()
 }
 
-function questionThreeNextPage() {
+async function questionThreeNextPage() {
     let questionThree = document.getElementById('question-3');
     questionThree.style.display = 'none';
 
@@ -91,6 +91,20 @@ function questionThreeNextPage() {
     questionFour.style.display = 'flex';
 
     const [imageQuery, quoteQuery] = getParamaters()
+
+    const imageData = await fetchImage(imageQuery)
+    const quoteData = await fetchQuote(quoteQuery)
+
+    const image = imageData.urls.regular
+    const quote = quoteData[0].quote
+
+    const closingImage = document.getElementById('closing-image')
+    const closingPersonality = document.getElementById('closing-personality')
+    const closingQuote = document.getElementById('closing-quote')
+
+    closingImage.src = image
+    closingPersonality.innerText = imageQuery
+    closingQuote.innerText = quote
 }
 
 document.getElementById('start-button').addEventListener('click', startNextPage)

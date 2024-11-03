@@ -6,7 +6,9 @@ export default async function fetchQuote() {
         'X-Api-Key': 'INP0PJzUD6ERMf5/PDw6OA==IcJ4mfgjulk8coWa'
     }
 })
-console.log(response)
-const data = await response.json()
-console.log(data)
+    console.log(response)
+    const data = await response.json()
+    console.log(data)
+
+    return data;
 }

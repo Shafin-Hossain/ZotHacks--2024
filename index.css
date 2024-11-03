@@ -1,6 +1,9 @@
 *{
     font-family: 'Roboto';
     overflow-y: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 #home {
@@ -40,8 +43,8 @@ h2 {
     color: rgb(245, 255, 132);
     text-align: center;
 }
-#hackpetr {height: 80vh;
-
+#hackpetr {
+    height: 70vh;
 }
 button {
     font-size: 20px;

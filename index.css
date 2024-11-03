@@ -26,6 +26,10 @@
     background: linear-gradient(to top,#00B294,#00BCf2);
 }
 
+#end-screen {
+    justify-content: space-around;
+}
+
 h1 {
     z-index: 99;
     font-size: 50px;

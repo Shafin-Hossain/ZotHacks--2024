@@ -43,6 +43,7 @@ h2 {
     color: rgb(241, 255, 92);
     text-align: center;
 }
+
 .hackpetr {
     height: 70vh;
 }
@@ -85,3 +86,8 @@ button:hover {
     to {background-image: url('petr.jpg');}
   }
   #end-screen {overflow-y:auto;}
+  #closing-quote {
+  font-size: large;
+    width:80vw;
+    text-align: center;
+}

@@ -1,7 +1,7 @@
-import image_api from './image_api.js';
-import quote_api from './quote_api.js';
+import fetchImage from './image_api.js';
+import fetchQuote from './quote_api.js';
 
-function getParamaters() {
+export function getParamaters() {
     const chosen = localStorage.getItem("1") + localStorage.getItem("2") + localStorage.getItem("3")
     switch(chosen) {
         case '111':
@@ -19,7 +19,7 @@ function getParamaters() {
         case '221':
             return ['laidback', 'home']
         case '222':
-            return ['charmster', 'sucess']
+            return ['charmster', 'success']
     }
 }
 
@@ -74,13 +74,13 @@ function questionThreeButtonOneNextPage() {
     let q3b1 = document.getElementById('question-3-button-1');
     localStorage.setItem("3","1")
 
-    questionOneNextPage()
+    questionThreeNextPage()
 }
 function questionThreeButtonTwoNextPage() {
     let q3b2 = document.getElementById('question-3-button-2');
     localStorage.setItem("3","2")
 
-    questionOneNextPage()
+    questionThreeNextPage()
 }
 
 function questionThreeNextPage() {
@@ -92,3 +92,11 @@ function questionThreeNextPage() {
 
     const [imageQuery, quoteQuery] = getParamaters()
 }
+
+document.getElementById('start-button').addEventListener('click', startNextPage)
+document.getElementById('question-1-button-1').addEventListener('click', questionOneButtonOneNextPage)
+document.getElementById('question-1-button-2').addEventListener('click', questionOneButtonTwoNextPage)
+document.getElementById('question-2-button-1').addEventListener('click', questionTwoButtonOneNextPage)
+document.getElementById('question-2-button-2').addEventListener('click', questionTwoButtonTwoNextPage)
+document.getElementById('question-3-button-1').addEventListener('click', questionThreeButtonOneNextPage)
+document.getElementById('question-3-button-2').addEventListener('click', questionThreeButtonTwoNextPage)

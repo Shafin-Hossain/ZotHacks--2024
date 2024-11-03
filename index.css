@@ -43,9 +43,18 @@ h2 {
     color: rgb(241, 255, 92);
     text-align: center;
 }
-#hackpetr {
+.hackpetr {
     height: 70vh;
 }
+
+#hackpetr-up {
+    display: none;
+}
+
+#hackpetr-down {
+    display: block;
+}
+
 button {
     font-size: 20px;
     padding: 50px 100px;

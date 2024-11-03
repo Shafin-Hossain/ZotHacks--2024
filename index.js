@@ -103,8 +103,22 @@ async function questionThreeNextPage() {
     const closingQuote = document.getElementById('closing-quote')
 
     closingImage.src = image
-    closingPersonality.innerText = imageQuery
+    closingPersonality.innerText = imageQuery + ' PETR'
     closingQuote.innerText = quote
+}
+
+function startEnter() {
+    const up = document.getElementById('hackpetr-up')
+    const down= document.getElementById('hackpetr-down')
+    up.style.display = 'block'
+    down.style.display = 'none'
+}
+
+function startLeave() {
+    const up = document.getElementById('hackpetr-up')
+    const down= document.getElementById('hackpetr-down')
+    up.style.display = 'none'
+    down.style.display = 'block'
 }
 
 document.getElementById('start-button').addEventListener('click', startNextPage)
@@ -114,3 +128,6 @@ document.getElementById('question-2-button-1').addEventListener('click', questio
 document.getElementById('question-2-button-2').addEventListener('click', questionTwoButtonTwoNextPage)
 document.getElementById('question-3-button-1').addEventListener('click', questionThreeButtonOneNextPage)
 document.getElementById('question-3-button-2').addEventListener('click', questionThreeButtonTwoNextPage)
+
+document.getElementById('start-button').addEventListener('mouseenter', startEnter)
+document.getElementById('start-button').addEventListener('mouseleave', startLeave)

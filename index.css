@@ -45,9 +45,10 @@
     justify-content: space-around;
 }
 
+
 h1 {
     z-index: 99;
-    font-size: 50px;
+    font-size: 90px;
     font-family: 'Bungee';
     color: blue;
     animation-name: writing-animation;
@@ -87,7 +88,48 @@ button {
     animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
 }
+button:hover:nth-child(1){
+    animation: shake1 0.4s;
+}
+@keyframes shake1{
+    0%{
+        transform: translateX(0px);
+    }
+    25%{
+        transform: translateX(-20px);
+    }
+    50%{
+        transform: translateX(0px);
+    }
+    75%{
+        transform: translateX(20px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
 
+}
+button:hover:nth-child(2){
+    animation: shake2 0.4s;
+}
+@keyframes shake2{
+    0%{
+        transform: translateX(0px);
+    }
+    25%{
+        transform: translateX(-20px);
+    }
+    50%{
+        transform: translateX(0px);
+    }
+    75%{
+        transform: translateX(20px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+
+}
 button:hover {
     color: blue;
 }
@@ -110,4 +152,10 @@ button:hover {
   font-size: large;
     width:80vw;
     text-align: center;
+}
+
+.button-set{
+    display:flex;
+    gap : 30px;
+
 }

@@ -131,3 +131,4 @@ document.getElementById('question-3-button-2').addEventListener('click', questio
 
 document.getElementById('start-button').addEventListener('mouseenter', startEnter)
 document.getElementById('start-button').addEventListener('mouseleave', startLeave)
+

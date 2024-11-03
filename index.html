@@ -11,7 +11,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
 </head>
 <body>
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
     <script type="module" src = 'index.js'></script>
+
     <div id='home' class = 'page'>
         <h1>WHAT PETR ARE U?</h1>
         <img id="hackpetr-up" class = 'hackpetr' src="HackPetr.PNG" alt="A picture of the default Petr.">
@@ -60,7 +62,25 @@
         <h3>PETR says a wise one once said:</h3>
         <p id="closing-quote"></p>
         <img class = "petr" src="wizard.PNG"/> 
-        <img class = "petr2" src="Safin.PNG"/> 
+        <img class = "petr2" src="Safin.PNG"/>
+        <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+        <script>
+            const jsConfetti = new JSConfetti()
+            const targetElement = document.getElementById('end-screen')
+            const observer = new MutationObserver((mutations) => {
+                console.log(mutations)
+                mutations.forEach((mutation) => {
+                    if (mutation.attributeName === 'style') {
+                        const displayStyle = window.getComputedStyle(targetElement).display;
+                        console.log(displayStyle)
+                        if (displayStyle !== 'none') {
+                            jsConfetti.addConfetti()
+                        }
+                    }
+                })
+            })
+            observer.observe(targetElement, {attributes: true});
+        </script> 
     </div>
 </body>
 </body>

@@ -13,6 +13,7 @@
     background-image: url('petr2.jpg');
     animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
+    background-position: center;
 }
 
 .page {
@@ -40,6 +41,10 @@
     
 }
 
+#end-screen {
+    justify-content: space-around;
+}
+
 h1 {
     z-index: 99;
     font-size: 50px;
@@ -58,6 +63,7 @@ h2 {
     color: rgb(241, 255, 92);
     text-align: center;
 }
+
 .hackpetr {
     height: 70vh;
 }
@@ -100,3 +106,8 @@ button:hover {
     to {background-image: url('petr.jpg');}
   }
   #end-screen {overflow-y:auto;}
+  #closing-quote {
+  font-size: large;
+    width:80vw;
+    text-align: center;
+}

@@ -18,6 +18,8 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+
+    background: linear-gradient(to top,#00B294,#00BCf2);
 }
 
 h1 {
@@ -30,6 +32,7 @@ h1 {
     animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
 }
+
 #hackpetr {height: 80vh;
 
 }

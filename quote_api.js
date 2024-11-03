@@ -1,4 +1,4 @@
-async function fetchQuote() {
+export default async function fetchQuote() {
     const url = "https://api.api-ninjas.com/v1/quotes?category=happiness"
     const response = await fetch(url, {method: 'GET', 
     headers: {
@@ -10,4 +10,3 @@ console.log(response)
 const data = await response.json()
 console.log(data)
 }
-fetchQuote()

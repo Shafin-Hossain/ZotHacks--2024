@@ -13,6 +13,7 @@
     background-image: url('petr2.jpg');
     animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
+    background-position: center;
 }
 
 .page {

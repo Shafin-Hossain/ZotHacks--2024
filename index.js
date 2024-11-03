@@ -104,7 +104,7 @@ async function questionThreeNextPage() {
 
     closingImage.src = image
     closingPersonality.innerText = imageQuery + ' PETR'
-    closingQuote.innerText = quote
+    closingQuote.innerHTML = "&ldquo;" + quote + "&rdquo;"
 }
 
 function startEnter() {
